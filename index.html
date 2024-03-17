@@ -4,89 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
     <header>
-        <div class="header top">
-            <div><img src="./resources/icons/MercadoLibre.svg" alt=""></div>
+        <div class="headerTop">
+            <div>
+                <img src="./resources/icons/MercadoLibre.svg" alt="" class="mlLogo">
+            </div>
+            
             <div class="searchBox">
                 <input type="text" placeholder="Buscar productos, marcas y más...">
-                <input type="checkbox" name="Solo en Autos y Camionetas" id="" >
-                <button type="submit">
-                    <img src="./resources/icons/lupa.webp" alt="">
+                <input type="checkbox" name="" id="" >
+                Solo en Autos, Motos y otros
+                <button type="submit" class="button1">
+                    <img src="./resources/icons/lupa.svg" alt="" >
                 </button> 
             </div>
         </div>
-        <div class="header bottom">
-            <div>categorias</div>
-            <div>ofertas</div>
-            <div>historial</div>
-            <div>usuario</div>
-            <div>mis compras</div>
-            <div>favoritos</div>
-            <div>notificaciones</div>
-            <div>carrito</div>
+        <div class="headerBottom">
+            <a href="#">categorias</a>
+            <a href="#">ofertas</a>
+            <a href="#">historial</a>
+            <a href="#">usuario</a>
+            <a href="#">mis compras</a>
+            <a href="#">favoritos</a>
+            <a href="#">notificaciones</a>
+            <a href="#">carrito</a>
         </div>
-        <div>breadcrum</div>
     </header>
-    <aside>
-        <dl>
-            <dt></dt>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <div>
-                    <a href="">Mostrar más</a>
-                </div>
-        </dl>
-        <dl>
-            <dt></dt>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
+    <main class="mainSection">
+        <aside class="searchFilter">
+            <nav class="breadcrum">
+                <a href="grid.html">Autos, Motos y otros</a>
+            </nav>
+            <dl>
+                <dt>Modelo</dt>
+                    <dd><a href="#">Focus III</a></dd>
+                    <dd><a href="#">Focus</a></dd>
+                    <dd><a href="#">Focus II</a></dd>
+                    <dd><a href="#">Focus Sedan</a></dd>
+                    <dd><a href="#">Fiesta Kinetic Design</a></dd>
+                    <div>
+                        <a href="#">Mostrar más</a>
+                    </div>
+            </dl>
+            <dl>
+                <dt>Kilómetros</dt>                    
+                    <dd><a href="#">0 Km (766)</a></dd>
+                    <dd><a href="#">0 a 45.000 km (1.135)</a></dd>
+                    <dd><a href="#">45.000 a 80.000 km (1.048)</a></dd>
+                    <dd><a href="#">80.000 o más (3.825)</a></dd>
 
-                <div>
-                    <a href="">Mostrar más</a>
-                </div>
-        </dl>
-        <dl>
-            <dt></dt>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>w
-                <div>
-                    <input type="text" placeholder="Mínimo">
-                    <p>-</p>
-                    <input type="text" placeholder="Máximo">
-                </div>
-        </dl>
-        <dl>
-            <dt></dt>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <div>
-                    <a href="">Mostrar más</a>
-                </div>
-        </dl>
-    </aside>
-    <main>
+                    
+                    <div class="rangeFilter">
+                        <input type="text" placeholder="Mínimo" class="Top">
+                        <p>-</p>
+                        <input type="text" placeholder="Máximo" class="Bottom">
+                        <button>></button>
+                    </div>
+            </dl>
+           
+            <dl>
+                <dt>Condición</dt>
+                    <dd><a href="#">Nuevo</a></dd>
+                    <dd><a href="#">Usado</a></dd>
+            </dl>
+            <dl>
+                <dt>Ubicación</dt>
+                    <dd><a href="#">Capital Federal (2.180)</a></dd>
+                    <dd><a href="#">Bs.As. G.B.A. Sur (2.177)</a></dd>
+                    <dd><a href="#">Bs.As. G.B.A. Norte (2.143)</a></dd>
+                    <dd><a href="#">Bs.As. G.B.A. Oeste (1.309)</a></dd>
+                    <dd><a href="#">Córdoba(964)</a></dd>
+                    <dd><a href="#">Santa Fe(384)</a></dd>
 
+                    <div>
+                        <a href="#">Mostrar más</a>
+                    </div>
+            </dl>
+            <dl>
+                <dt>Precio</dt>
+                    <dd><a href="#">Hasta $ 4.500.000 (3.789)</a></dd>
+                    <dd><a href="#">$ 4.500.000 a $ 10.000.000 (3.155)</a></dd>
+                    <dd><a href="#">más de $ 10.000.000 (3.825)</a></dd>
+                    
+                    <div class="rangeFilter">
+                        <input type="text" placeholder="Mínimo" class="Top">
+                        <p>-</p>
+                        <input type="text" placeholder="Máximo" class="Bottom">
+                        <button>></button>
+                    </div>
+            </dl>
+            <dl>
+                <dt>Año</dt>
+                    <dd><a href="#">2024</a></dd>
+                    <dd><a href="#">2023</a></dd>
+                    <dd><a href="#">2022</a></dd>
+                    <dd><a href="#">2021</a></dd>
+                    <dd><a href="#">2020</a></dd>
+                    <dd><a href="#">2019</a></dd>
+
+                    <div class="rangeFilter">
+                        <input type="text" placeholder="Mínimo" class="Top">
+                        <p>-</p>
+                        <input type="text" placeholder="Máximo" class="Bottom">
+                        <button>></button>
+                    </div>
+            </dl>
+            <div class="publicidad">
+                <img src="./resources/images/publicidad.jpg" alt="">
+                
+            </div>
+        </aside>
+        <section class="gridContainer">
+            <article>
+                <figure>
+                    <img src="./resources/images/auto.webp" alt="">
+                </figure>
+                <dl>
+                    <dt>1250999</dt>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <div>
+                        <img src="./resources/images/auto.webp" alt="">
+                    </div>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <div>
+                        <img src="./resources/images/auto.webp" alt="">
+                    </div>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <div>
+                        <img src="./resources/images/auto.webp" alt="">
+                    </div>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <div>
+                        <img src="./resources/images/auto.webp" alt="">
+                    </div>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <div>
+                        <img src="./resources/images/auto.webp" alt="">
+                    </div>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <div>
+                        <img src="./resources/images/auto.webp" alt="">
+                    </div>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <div>
+                        <img src="./resources/images/auto.webp" alt="">
+                    </div>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+                    <dd></dd>
+
+                </dl>
+            </article>  
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
 </html>
+
+<!--
+    header
+    main
+        aside
+        section
+            article
+
+
+-->
