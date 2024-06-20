@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    background: #b8b2b2;
+}
+
+.headerTop {
+    display: flex;
+    min-height: 80px;
+    height: 80px;
+    justify-content: space-evenly;
+    background-color: #ffe600;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content:center;
+    height: 150px;
+    width: 80px;
+    margin-right: 20px;
+    padding: 0;
+
+}
+  
+.headerBottom {
+    display: flex;
+    padding: 10px 100px;
+    justify-content: space-evenly;
+    background-color: #ffe600;
+}
+
+.headerBottom a{
+    color: rgb(52, 52, 102);
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.headerBottom a:hover{
+    color: rgba(255, 255, 255, 0.681);
+}
+
+.searchBox {
+    display: flex;
+    justify-content:space-between;
+    height: 40px;
+    width: 500px;
+    margin: 30px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.button1{
+    height: 40px;
+    width: 40;
+    background-color: #fff;
+}
+
+.button1 img{
+    height: 25px;
+    width: 30px;
+}
+
+.publicidad {
+    display:flex;
+    justify-content:left;
+    height: 40px;
+    width: 250px;
+    margin: 30px;
+    
+}
+
+h2{ font-size: 1.5em;}
+h3{ font-size: 0.8em;}
+
+@media (max-width: 700px){
+    header{
+      flex-direction: column;
+    }
+}    
+
+/*_____________________________________________*/
+
+.mainsection{
+    display: flex;
+    margin: 2px 4px;
+}
+
+.aside {
+    margin: 20px 40px 20px 0px;
+    width: 30px;
+}
+
+/*_____________________________________________*/
+
+.mis-compras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.mis-compras .container{
+    padding: 120px 12px;
+}
+.compras{
+    margin: 10px;
+}
+
+
+.compras .card{
+    display: flex;
+    width: 650px;
+    height: 100px;
+    padding: 0;
+    margin-top: 40px;
+    border: 3px;
+    border-radius: 10px;
+}
+
+/*_____________________________________________*/
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        #ffffff00,
+        rgba(0,0,0,0.5))
+        ,url("/resources/img/card1.jpg");
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        #ffffff00,
+        rgba(0,0,0,0.5))
+        ,url("/resources/img/card2.jpg");
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        #ffffff00,
+        rgba(0,0,0,0.5))
+        ,url("/resources/img/card3.jpg");
+
+}
+
+.card h3{
+    margin-top: 0;
+    font-size: 0.8em;
+    color: rgb(96, 89, 89);
+}

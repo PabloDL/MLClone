@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="searchBox">
+            <img src="./resources/icons/MercadoLibre.svg" alt="" class="mlLogo">
+            <input type="text" placeholder="Buscar..." class="searchInput">
+            <!-- Elemento modificado para redirigir a busqueda.html -->
+            <a href="./resources/pages/busqueda.html" class="searchButton">
+                <img src="./resources/icons/lupa.svg" alt="Buscar" height="20">
+            </a>
+        </div>
+        <!-- <div class="searchBox">
+            
+            <img src="./resources/icons/MercadoLibre.svg" alt="" class="mlLogo">
+            <input type="text" placeholder="Buscar..." class="searchInput">
+            <button class="searchButton"><a href="./resources/pages/busqueda.html"></a><img src="./resources/icons/lupa.svg" alt="Buscar" height="20"></button>
+        </div> -->
+        <div class="headerBottom">
+            <a href="#">Categorias</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Historial</a>
+            <a href="#">Usuario</a>
+            <a href="./resources/pages/misCompras.html">Mis compras</a>
+            <a href="#">Favoritos</a>
+            <a href="#">Notificaciones</a>
+            <a href="#">Carrito</a>
+        </div>
+    </header>
+
+    <section class="ofertasDelDia">
+        <h2>Ofertas del día</h2>
+        <div class="oferta">
+            <img src="./resources/images/Fiorino_Oferta.webp" alt="Fiorino_Oferta">
+            <div class="infoOferta">
+                <h3>Fiat Fiorino 1.4 Fire</h3>
+                <p class="precioOriginal">$6.000.000</p>
+                <p class="precioDescuento">$4.500.000</p>
+                <a href="#" class="boton">Ver oferta</a>
+            </div>
+            <img src="./resources/images/Cronos_Oferta.webp" alt="Cronos_Oferta">
+            <div class="infoOferta">
+                <h3>Fiat Cronos 1.3 Drive Cvt</h3>
+                <p class="precioOriginal">$19.200.000</p>
+                <p class="precioDescuento">$18.000.000</p>
+                <a href="#" class="boton">Ver oferta</a>
+            </div>
+            <img src="./resources/images/Tracker_Oferta.webp" alt="Tracker_Oferta">
+            <div class="infoOferta">
+                <h3>Chevrolet Tracker 1.8 Ltz</h3>
+                <p class="precioOriginal">$19.400.000</p>
+                <p class="precioDescuento">$18.000.000</p>
+                <a href="#" class="boton">Ver oferta</a>
+            </div>
+        </div>
+        <section class="carousel">
+            <div class="carousel-container">
+                <img src="./resources/images/Carrousel1.webp" alt="Imagen 1">
+                <img src="./resources/images/Carrousel2.webp" alt="Imagen 2">
+                <img src="./resources/images/Carrousel3.webp" alt="Imagen 3">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </section>
+       
+    </section>
+
+    <footer>
+        <div>
+            <a class="relatedLinks" href="#">Terminos y Condiciones</a>
+            <a class="relatedLinks" href="#">Politica de privacidad</a>
+            <a class="relatedLinks" href="#">Politica de cookies</a>
+        </div>
+
+        <div>
+            <a class="relatedLinks" href="#">Sobre nosotros</a>
+            <a class="relatedLinks" href="#">Suscribite a nuestro newsletter</a>
+        </div>
+
+        <div>
+            <p>Contactanos!</p>
+            <p>Contacto@MercadoLiberado.com.ar</p>
+            <a href="http://www.instagram.com/"><img src="../icons/instagram-24.png" alt=""></a>
+            <a href="http://www.facebook.com"><img src="../icons/facebook-24.png" alt=""></a>
+            <a href="http://www.youtube.com"><img src="../icons/youtube-24.png" alt=""></a>
+            <a href="http://www.linkedIn.com"><img src="../icons/linkedin-24.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="./resources/js/carrousel.js"></script>
+</body>
+</html>
