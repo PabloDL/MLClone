@@ -1,0 +1,147 @@
+
+body {
+  font-family: sans-serif;
+}
+
+.mlLogo {
+  height: 120px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffe600;
+
+}
+
+
+
+.searchInput {
+  width: calc(100% - 40px); /* Restamos el ancho del botón al input */
+  height: 30px;
+  margin-right: 1px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.searchButton {
+  background: #ff6600;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 0 5px 5px 0; /* Añadimos un borde redondeado solo a la derecha */
+  position: absolute;
+  top: 78px;
+  left: 1170px;
+}
+
+.headerBottom {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-evenly;
+  background-color: #ffe600;
+}
+
+.headerBottom a {
+  text-decoration: none;
+  color: #333;
+}
+
+.ofertasDelDia {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.oferta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.oferta img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.infoOferta {
+  flex: 1;
+}
+
+.infoOferta h3 {
+  margin-top: 0;
+}
+
+.precioOriginal {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.boton {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffe600;
+  height: 20vh;
+  width: 100vw;
+  margin-bottom: 15vh;
+}
+
+footer a,
+footer a:visited {
+  color: black;
+}
+
+footer .relatedLinks {
+  display: block;
+  margin: 8px;
+}
