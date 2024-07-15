@@ -46,6 +46,74 @@ body {
 
 .headerBottom a {
   text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.headerLogo {
+  height: 120px;
+}
+
+/*_____________________________________________*/
+
+.searchBox {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 40px;
+  min-width: 400px;
+  width: 40%;
+  background-color: white;
+  border-radius: 2%;
+  font-size: 20px;
+}
+
+.searchBox input {
+  width: 100%;
+  outline: none;
+  margin: 8px;
+  border: 0;
+  font-size: 16px;
+}
+
+.searchBox button {
+  width: 45px;
+  height: 42px;
+  border: 0;
+  justify-self: end;
+}
+
+.searchBox button img {
+  width: auto;
+  height: 35px;
+  padding: 3px;
+}
+
+.searchBox p {
+  font-size: 16px;
+}
+
+/*_____________________________________________*/
+
+.mainSection {
+  display: flex;
+  width: 80vw;
+  margin: 0% 10% 10% 10%;
+}
+
+.mainSection .searchFilter {
+  width: 25vw;
+  min-width: 250px;
+  background-color: var(--espresso);
+  margin-top: 26px;
+}
+
+.searchFilter dl {
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.searchFilter dt {
   color: #333;
 }
 
@@ -60,8 +128,41 @@ body {
   margin-bottom: 20px;
 }
 
-.oferta img {
-  width: 200px;
+.rangeFilter input {
+  width: 80px;
+  height: 15px;
+  margin: 3px;
+}
+
+.rangeFilter button {
+  height: 21px;
+}
+
+/*............*/
+
+.gridContainer {
+  width: 80vw;
+  background-color: white;
+  display: grid;
+  padding: 2%;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 3fr));
+  grid-gap: 15px;
+}
+
+.gridContainer article {
+  background-color: #d6d0b2;
+  border-radius: 2%;
+  max-width: 100%;
+  /* max-height: 50%; */
+  overflow: hidden;
+}
+
+.gridContainer article figure {
+  margin: 0px;
+  max-height: 70%;
+}
+
+.gridContainer article figure img {
   height: auto;
   margin-right: 20px;
 }
@@ -126,11 +227,13 @@ button {
   right: 0;
 }
 
+/*-------------------------------------------s*/
+
 footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffe600;
+  background-color: #f5f1ec;
   height: 20vh;
   width: 100vw;
   margin-bottom: 15vh;
