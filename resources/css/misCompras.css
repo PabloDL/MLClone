@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #b8b2b2;
 }
 
@@ -30,7 +30,6 @@ body{
     width: 80px;
     margin-right: 20px;
     padding: 0;
-
 }
   
 .headerBottom {
@@ -43,7 +42,7 @@ body{
 .headerBottom a{
     color: rgb(52, 52, 102);
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -54,35 +53,55 @@ body{
 .searchBox {
     display: flex;
     justify-content:space-between;
+    overflow: hidden;
     height: 40px;
-    width: 500px;
-    margin: 30px;
-    padding: 0px;
+    min-width: 400px;
+    width: 40%;
     background-color: #fff;
+    border-radius: 2%;
+    font-size: 20px;
+    padding: 0px;
+
+}
+
+.searchBox input {
+    width: 100%;
+    outline: none;
+    margin: 8px;
+    border: 0;
+    font-size: 16px;
 }
 
 .button1{
-    height: 40px;
-    width: 40;
+    height: 45px;
+    width: 42px;
+    border: 0;
+    justify-self: end;
     background-color: #fff;
 }
 
 .button1 img{
-    height: 25px;
-    width: 30px;
+    height: 35px;
+    width: auto;
+    padding: 3px;
+    border: 0;
+}
+
+.searchBox p {
+    font-size: 16px;
 }
 
 .publicidad {
     display:flex;
     justify-content:left;
-    height: 40px;
-    width: 250px;
-    margin: 30px;
-    
+    height: 35px;
+    width: 130px;
+    margin: 0px;
+    margin-right: 100px;
+
 }
 
-h2{ font-size: 1.5em;}
-h3{ font-size: 0.8em;}
+
 
 @media (max-width: 700px){
     header{
@@ -97,45 +116,134 @@ h3{ font-size: 0.8em;}
     margin: 2px 4px;
 }
 
-.aside {
+.filtro {
     margin: 20px 40px 20px 0px;
-    width: 30px;
+    width: 185px;
+    height: 400px auto;
+    background-color: #fff;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.filtro h4{
+    color: #2b6bff;
+    font-size: 14px;
+    margin: 20px 20px 30px 30px;
+}
+
+.filtro h4:hover{
+    color: #7b7b7b;
+}
+
+.filtro a{
+    color: #7b7b7b;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.filtro a:hover{
+    color: #2b6bff;
 }
 
 /*_____________________________________________*/
 
 .mis-compras {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-.mis-compras .container{
-    padding: 120px 12px;
-}
-.compras{
-    margin: 10px;
-}
-
-
-.compras .card{
     display: flex;
-    width: 650px;
-    height: 100px;
-    padding: 0;
-    margin-top: 40px;
-    border: 3px;
-    border-radius: 10px;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 15px auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,.5);
+}
+
+.card{
+    display: flex;
+    float: right;
+    background-color: #fff;
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    width: 750px;
+    height: 130px;
+}
+
+.parrafo {
+    display: block;
+}
+
+.card h4 {
+    color: rgb(3, 177, 3);
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.card h3{
+    color: black;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.card h5{
+    color: #7b7b7b;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+.card img{
+    width: 100px;
+    float: left;
+    margin: 10px;
+    margin-right: 50px;
+    border: dashep 3px white;
+}
+
+/*_____________________________________________*/
+footer {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 950px auto;
+    height: 100px auto;
+    background-color:#fff;
+}
+
+footer a{
+    font-size: 15px;
+    color: #494949;
+}
+
+footer a:hover{
+    color: #2b6bff;
+}
+
+footer p{
+    font-size: 15px;
+    color: #494949;
+}
+
+footer p:hover{
+    color: #2b6bff;
+}
+
+footer .relatedLinks{
+    display: block;
+    margin: 10px;
 }
 
 /*_____________________________________________*/
 
-.card:first-child{
+/*.card:first-child{
     background-image: linear-gradient(
         0deg,
         #ffffff00,
         rgba(0,0,0,0.5))
-        ,url("/resources/img/card1.jpg");
+        ,url("/resources/images/camara-fotografica.png");
 }
 
 .card:nth-child(2){
@@ -159,4 +267,4 @@ h3{ font-size: 0.8em;}
     margin-top: 0;
     font-size: 0.8em;
     color: rgb(96, 89, 89);
-}
+}*/
