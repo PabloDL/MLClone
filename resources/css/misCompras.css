@@ -181,16 +181,28 @@ body{
     font-size: 15px;
 }
 
+.card h4:hover{
+    color: #2b6bff;
+}
+
 .card h3{
     color: black;
     margin-top: 2px;
     font-size: 15px;
 }
 
+.card h3:hover{
+    color: #2b6bff;
+}
+
 .card h5{
     color: #7b7b7b;
     margin-top: 10px;
     font-size: 15px;
+}
+
+.card h5:hover{
+    color: #2b6bff;
 }
 
 
@@ -215,7 +227,7 @@ footer {
 
 footer a{
     font-size: 15px;
-    color: #494949;
+    color: #7b7b7b;
 }
 
 footer a:hover{
@@ -224,7 +236,7 @@ footer a:hover{
 
 footer p{
     font-size: 15px;
-    color: #494949;
+    color: #7b7b7b;
 }
 
 footer p:hover{
