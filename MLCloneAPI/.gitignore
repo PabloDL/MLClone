@@ -4,13 +4,6 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea/workspace.xml
-.idea/vcs.xml
-.idea/misc.xml
-.idea/jpa-buddy.xml
-.idea/MLClone.iml
-.idea/dbnavigator.xml
-
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -43,9 +36,3 @@ build/
 
 ### Mac OS ###
 .DS_Store
-*.xml
-MLCloneAPI/.smarttomcat/MLCloneAPI/conf/catalina.policy
-MLCloneAPI/.smarttomcat/MLCloneAPI/conf/catalina.properties
-MLCloneAPI/.smarttomcat/MLCloneAPI/conf/jaspic-providers.xsd
-MLCloneAPI/.smarttomcat/MLCloneAPI/conf/logging.properties
-MLCloneAPI/.smarttomcat/MLCloneAPI/conf/tomcat-users.xsd
